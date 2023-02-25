@@ -1,0 +1,12 @@
+.content{
+  display: grid;
+  grid-template-columns:1fr auto 1fr;
+  grid-template-rows:repeat(6, auto);
+  grid-template-areas:
+  '. lead .'
+  '. intro .'
+  'photo-grid photo-grid photo-grid'
+  'places places places'
+  '. cover .'
+  'footer footer footer';
+}
