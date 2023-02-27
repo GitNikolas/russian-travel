@@ -1,0 +1,77 @@
+.places{
+  max-width: 984px;
+}
+
+.places__place{
+  display: grid;
+  grid-template-columns:minmax(340px, 460px) minmax(min-content, max-content);
+  grid-template-rows:repeat(2, auto);
+  grid-template-areas:
+  'places__title places__website'
+  'places__image places__paragraph';
+  column-gap: 32px;
+  row-gap: 48px;
+}
+
+.places__title{
+  grid-area:places__title;
+  margin: 0;
+}
+
+.places__website{
+  display: grid;
+  grid-area:places__website;
+  align-items:end;
+  color:#FFFFFF;
+  text-decoration: none;
+}
+
+.places__image{
+  grid-area:places__image;
+}
+
+.places__paragraph{
+  grid-area:places__paragraph;
+  margin:0;
+}
+
+
+
+@media screen and (max-width:767px) {
+  .places{
+    max-width:767px;
+  }
+  .places__place{
+    display: grid;
+    justify-content: center;
+    grid-template-columns:minmax(320px, 1fr);
+    grid-template-rows:repeat(4, auto);
+    grid-template-areas:
+    'places__title'
+    'places__website'
+    'places__image'
+    'places__paragraph';
+    row-gap: 32px;
+  }
+
+  .places__title{
+    grid-area:places__title;
+  }
+
+  .places__website{
+    margin: 0;
+    grid-area:places__website;
+    color:#FFFFFF;
+    text-decoration: none;
+  }
+
+  .places__image{
+    grid-area:places__image;
+    width: 100%;
+  }
+
+  .places__paragraph{
+    grid-area:places__paragraph;
+    margin:0;
+  }
+}

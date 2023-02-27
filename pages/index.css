@@ -1,151 +1,17 @@
 @import url(../blocks/page/page.css);
 @import url(../blocks/content/content.css);
 @import url(../blocks/header/header.css);
+@import url(../blocks/lead/lead.css);
+/* @import url(../blocks/intro/intro.css);
+@import url(../blocks/places/places.css);
+@import url(../blocks/photo-grid/photo-grid.css);
+@import url(../blocks/cover/cover.css);
+@import url(../blocks/footer/footer.css); */
 
 .list-style{
   list-style:none;
   padding:0;
 }
-
-.header__lang-link{
-  color:#FFFFFF;
-  justify-self: end;
-}
-
-.lead{
-  display: grid;
-  grid-area:lead;
-  justify-items: center;
-}
-
-.lead__title{
-  max-width: 720px;
-  font-weight: 900;
-  font-size: 96px;
-  line-height: 100px;
-  text-align: center;
-  margin:0 0 32px;
-}
-
-.lead__subtitle{
-  max-width: 640px;
-  font-weight: 400;
-  font-size: 30px;
-  line-height: 36px;
-  text-align: center;
-  margin: 0 0 64px;
-}
-
-.lead__image{
-  max-width: 984px;
-  max-height: 615px;
-  margin: 0;
-}
-
-.lead__caption{
-  font-family: Inter;
-  font-size: 10px;
-  font-weight: 400;
-  line-height: 14px;
-  margin:8px 0 0;
-}
-
-.intro{
-  grid-area:intro;
-  /* justify-self: start; */
-  max-width: 690px;
-}
-
-.intro__title{
-  font-family: Inter;
-  font-size: 54px;
-  font-weight: 900;
-  line-height: 58px;
-}
-
-.intro__text{
-  font-family: Inter;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 26px;
-}
-
-.intro__list{
-  font-family: Inter;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 18px;
-}
-
-.photo-grid{
-  display: grid;
-  grid-area:photo-grid;
-  justify-items:center;
-  grid-template-columns:repeat(auto-fit, minmax(284px, 1fr));
-  gap:16px;
-  max-width: 1184px;
-}
-
-.photo-grid__item{
-
-}
-
-.places{
-  grid-area:places;
-}
-
-.places__place{
-  display: grid;
-  grid-template-columns:repeat(2, auto);
-  grid-template-rows:repeat(2, auto);
-  grid-template-areas:
-  'places__title places__website'
-  'places__image places__paragraph';
-}
-
-.places__website{
-  color:#FFFFFF;
-  text-decoration: none;
-}
-
-.cover{
-  grid-area:cover;
-  background-image: url(../images/__background.png);
-  width: 1184px;
-  height: 740px;
-  object-fit: cover;
-}
-
-.cover__title{
-  font-family: inter;
-  font-weight: 900;
-  font-size:72px;
-  line-height: 76px;
-  text-align: center;
-}
-
-.cover__subtitle{
-  font-family: inter;
-  font-weight: 400;
-  font-size:18px;
-  line-height: 22px;
-  text-align: center;
-}
-
-.footer{
-  display: grid;
-  grid-area:footer;
-  grid-template-columns:1fr auto;
-}
-
-.footer__link{
-  color:#FFFFFF;
-  text-decoration: none;
-  float: left;
-  margin-right:18px;
-}
-
-
 
 @font-face {
   font-family: "Inter";

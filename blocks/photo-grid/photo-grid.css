@@ -1,1 +1,14 @@
 
+.photo-grid{
+  display: grid;
+  grid-area:photo-grid;
+  justify-items:center;
+  grid-template-columns:repeat(auto-fit, minmax(284px, 1fr));
+  gap:16px;
+  max-width: 1184px;
+
+}
+
+.photo-grid__item{
+/* Свойства? */
+}

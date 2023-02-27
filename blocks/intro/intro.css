@@ -1,0 +1,35 @@
+.intro{
+  display: grid;
+  justify-items: start;
+  grid-template-columns: minmax(690px, 1fr) 1fr;
+  grid-template-rows:repeat(3, auto);
+  grid-template-areas:
+  'intro__title .'
+  'intro__text .'
+  'intro__list .';
+  max-width: 984px;
+}
+
+.intro__title{
+  grid-area:intro__title;
+  font-family: Inter;
+  font-size: 54px;
+  font-weight: 900;
+  line-height: 58px;
+}
+
+.intro__text{
+  grid-area:intro__text;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.intro__list{
+  grid-area:intro__list;
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 18px;
+}

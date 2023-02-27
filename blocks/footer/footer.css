@@ -1,0 +1,12 @@
+.footer{
+  display: grid;
+  grid-area:footer;
+  grid-template-columns:1fr auto;
+}
+
+.footer__link{
+  color:#FFFFFF;
+  text-decoration: none;
+  float: left;
+  margin-right:18px;
+}

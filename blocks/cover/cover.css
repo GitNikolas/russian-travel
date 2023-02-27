@@ -1,0 +1,28 @@
+.cover{
+
+}
+
+
+
+.cover__title{
+  font-family: inter;
+  font-weight: 900;
+  font-size:72px;
+  line-height: 76px;
+  text-align: center;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+
+}
+
+.cover__subtitle{
+  font-family: inter;
+  font-weight: 400;
+  font-size:18px;
+  line-height: 22px;
+  text-align: center;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+}
