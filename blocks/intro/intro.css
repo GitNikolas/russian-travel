@@ -1,8 +1,7 @@
 .intro{
   display: grid;
-  justify-items: start;
-  grid-template-columns: minmax(690px, 1fr) 1fr;
-  grid-template-rows:repeat(3, auto);
+  grid-template-columns: minmax(288px, 690px) minmax(0, 294px);
+  grid-template-rows: repeat(3, auto);
   grid-template-areas:
   'intro__title .'
   'intro__text .'
@@ -11,15 +10,14 @@
 }
 
 .intro__title{
-  grid-area:intro__title;
+  grid-area: intro__title;
   font-family: Inter;
-  font-size: 54px;
+  font-size: calc(32px + 22*(100vw - 320px)/960);
   font-weight: 900;
-  line-height: 58px;
 }
 
 .intro__text{
-  grid-area:intro__text;
+  grid-area: intro__text;
   font-family: Inter;
   font-size: 16px;
   font-weight: 400;
@@ -27,9 +25,22 @@
 }
 
 .intro__list{
-  grid-area:intro__list;
+  grid-area: intro__list;
   font-family: Inter;
   font-size: 12px;
   font-weight: 700;
   line-height: 18px;
+}
+
+@media screen and (max-width:768px) {
+  .intro{
+  grid-template-columns: minmax(288px, 720px);
+  justify-items: center;
+  }
+}
+
+@media screen and (max-width:320px) {
+  .intro{
+  margin:0 5% 0;
+  }
 }
