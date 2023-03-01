@@ -1,5 +1,8 @@
 .places{
+  display: grid;
+  row-gap: 80px;
   max-width: 984px;
+  margin: 92px auto;
 }
 
 .places__place{
@@ -9,21 +12,31 @@
   grid-template-areas:
   'places__title places__website'
   'places__image places__paragraph';
-  column-gap: 32px;
+  column-gap: 40px;
   row-gap: 48px;
 }
 
 .places__title{
   grid-area:places__title;
+  font-size: calc(32px + 40*(100vw - 320px)/960);
+  font-weight: 900;
   margin: 0;
 }
 
 .places__website{
   display: grid;
   grid-area:places__website;
-  align-items:end;
+  align-self: end;
   color:#FFFFFF;
   text-decoration: none;
+}
+
+.website__url-heading{
+  color: #AAAAAA;
+}
+
+.website__link{
+  color:#FFFFFF;
 }
 
 .places__image{
@@ -31,31 +44,34 @@
 }
 
 .places__paragraph{
+  display: grid;
+  grid-template-rows: repeat(2, min-content);
   grid-area:places__paragraph;
   margin:0;
+  row-gap: 26px;
+
+}
+
+@media screen and (max-width:1024px) {
+  .places{
+    max-width: 928px;
+  }
 }
 
 
 
-@media screen and (max-width:767px) {
+@media screen and (max-width:768px) {
   .places{
-    max-width:767px;
+    max-width:720px;
+    margin: 88px auto 90px;
   }
   .places__place{
-    display: grid;
-    justify-content: center;
-    grid-template-columns:minmax(320px, 1fr);
-    grid-template-rows:repeat(4, auto);
-    grid-template-areas:
-    'places__title'
-    'places__website'
-    'places__image'
-    'places__paragraph';
-    row-gap: 32px;
+    row-gap: 48px;
   }
 
   .places__title{
     grid-area:places__title;
+    margin: 0 5%;
   }
 
   .places__website{
@@ -73,5 +89,39 @@
   .places__paragraph{
     grid-area:places__paragraph;
     margin:0;
+  }
+}
+
+@media screen and (max-width:425px) {
+  .places{
+    max-width:720px;
+    margin: 64px auto 66px;
+  }
+  .places__place{
+    display: grid;
+    justify-content: center;
+    grid-template-columns:minmax(320px, 1fr);
+    grid-template-rows:repeat(4, auto);
+    grid-template-areas:
+    'places__title'
+    'places__website'
+    'places__image'
+    'places__paragraph';
+  }
+  .places__title{
+    max-width:288px;
+    margin:0 5%;
+
+  }
+
+  .places__paragraph{
+    max-width:288px;
+    margin:0 5%;
+
+  }
+
+  .places__website{
+    max-width:288px;
+    margin:0 5%;
   }
 }
