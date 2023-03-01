@@ -1,14 +1,35 @@
 
 .photo-grid{
   display: grid;
-  grid-area:photo-grid;
-  justify-items:center;
+  justify-content:center;
   grid-template-columns:repeat(auto-fit, minmax(284px, 1fr));
   gap:16px;
   max-width: 1184px;
-
 }
 
 .photo-grid__item{
-/* Свойства? */
+  object-fit: cover;
+  width: 100%;
+  aspect-ratio: 4 / 3;
 }
+
+@media screen and (max-width:1024px) {
+.photo-grid{
+  grid-template-columns:repeat(auto-fit, minmax(284px, 300px));
+  gap:14px;
+}
+}
+
+@media screen and (max-width:768px) {
+  .photo-grid{
+    grid-template-columns:repeat(auto-fit, minmax(300px, 352px));
+    gap:16px;
+  }
+  }
+
+  @media screen and (max-width:320px) {
+  .photo-grid{
+    grid-template-columns:repeat(auto-fit, minmax(240px, 288px));
+    gap:12px;
+  }
+  }
