@@ -2,6 +2,8 @@
   display: grid;
   grid-area:footer;
   grid-template-columns:1fr auto;
+  max-width: 1184px;
+  margin: 0 auto 0;
 }
 
 .footer__link{

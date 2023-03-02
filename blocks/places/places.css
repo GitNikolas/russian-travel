@@ -39,6 +39,10 @@
   color:#FFFFFF;
 }
 
+.website__link:hover{
+  opacity:0.8;
+}
+
 .places__image{
   grid-area:places__image;
 }

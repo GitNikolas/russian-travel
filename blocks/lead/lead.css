@@ -10,7 +10,7 @@
   max-width: 720px;
   text-align: center;
   margin:0 0 32px;
-  font-size: calc(40px + 50*(100vw - 320px)/960);
+  font-size: calc(40px + 56*(100vw - 320px)/960);
   font-weight: 900;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
