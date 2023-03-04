@@ -1,0 +1,8 @@
+.website__link{
+  color:#FFFFFF;
+  line-height: 1.22;
+}
+
+.website__link:hover{
+  opacity:0.8;
+}

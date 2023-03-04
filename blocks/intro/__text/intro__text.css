@@ -1,0 +1,9 @@
+.intro__text{
+  grid-area: intro__text;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  margin: 0 0 33px;
+  line-height: 1.63;
+}

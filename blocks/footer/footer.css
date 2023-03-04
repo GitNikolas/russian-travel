@@ -3,12 +3,29 @@
   grid-area:footer;
   grid-template-columns:1fr auto;
   max-width: 1184px;
-  margin: 0 auto 0;
+  margin: 0 auto 24px;
+
 }
 
-.footer__link{
-  color:#FFFFFF;
-  text-decoration: none;
-  float: left;
-  margin-right:18px;
+@media screen and (max-width:1024px) {
+  .footer{
+    max-width: 928px;
+  }
 }
+
+@media screen and (max-width:768px) {
+  .footer{
+    max-width: 720px;
+  }
+}
+
+@media screen and (max-width:425px) {
+  .footer{
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 24px 5%;
+  }
+}
+
+
+

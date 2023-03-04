@@ -1,0 +1,8 @@
+.intro__title{
+  grid-area: intro__title;
+  font-family: Inter;
+  font-size: calc(32px + 22*(100vw - 320px)/960);
+  font-weight: 900;
+  margin: 0 0 40px;
+  line-height: 1.07;
+}

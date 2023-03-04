@@ -4,15 +4,9 @@
   grid-template-columns: 1fr repeat(2, 30px);
   max-width: 1184px;
   margin: 28px auto 56px;
-}
-
-.header__logo{
-  max-width:176px;
-}
-
-.header__lang-link{
-  color:#FFFFFF;
-  justify-self: end;
+  column-gap: 18px;
+  font-size: 24px;
+  line-height: 1.17;
 }
 
 @media screen and (max-width:1024px) {
@@ -25,9 +19,11 @@
   .header{
     margin: 16px 5% 48px;
   }
-
-  .header__logo{
-    max-width:142px;
-  }
 }
 
+@media screen and (max-width:425px) {
+  .header{
+    font-size: 18px;
+    line-height: 1.17;
+  }
+}

@@ -1,0 +1,23 @@
+.places__paragraph{
+  display: grid;
+  grid-template-rows: repeat(2, min-content);
+  grid-area:places__paragraph;
+  margin:0;
+  row-gap: 26px;
+  line-height: 1.63;
+}
+
+@media screen and (max-width:768px) {
+  .places__paragraph{
+    grid-area:places__paragraph;
+    font-size: 16px;
+    margin:0;
+  }
+}
+
+@media screen and (max-width:767px) {
+  .places__paragraph{
+    max-width:288px;
+    margin-left: 5%;
+  }
+}
