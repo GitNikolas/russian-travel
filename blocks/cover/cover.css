@@ -10,14 +10,12 @@
 @media screen and (max-width:1024px) {
   .cover{
     min-height: 640px;
-    max-width: 100%;
   }
 }
 
 @media screen and (max-width:768px) {
   .cover{
     min-height: 480px;
-    max-width: 100%;
     margin: 0 auto 88px;
   }
 }
@@ -26,7 +24,6 @@
   .cover{
     margin: 0 auto 65px;
     min-height: 200px;
-    max-width: 100%;
   }
 }
 

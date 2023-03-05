@@ -5,6 +5,7 @@
   margin:0;
   row-gap: 26px;
   line-height: 1.63;
+  font-size: 18px;
 }
 
 @media screen and (max-width:768px) {
