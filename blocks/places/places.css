@@ -3,12 +3,13 @@
   row-gap: 80px;
   max-width: 984px;
   margin: 92px auto;
+  box-sizing: border-box;
 }
 
 @media screen and (max-width:1024px) {
   .places{
     max-width: 928px;
-    margin: 92px 4%;
+    margin: 92px auto;
   }
 }
 
@@ -20,9 +21,9 @@
   }
 }
 
-@media screen and (max-width:767px) {
+@media screen and (max-width:425px) {
   .places{
-    max-width:767px;
+    max-width:425px;
     margin: 64px auto 65px;
     row-gap: 50px;
   }

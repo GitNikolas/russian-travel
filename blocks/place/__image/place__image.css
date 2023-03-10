@@ -1,0 +1,4 @@
+.place__image{
+  grid-area:places__image;
+  width: 100%;
+}

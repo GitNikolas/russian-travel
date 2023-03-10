@@ -5,13 +5,14 @@
   grid-template-columns:repeat(auto-fit, minmax(284px, 1fr));
   gap:16px;
   max-width: 1184px;
+  margin: 0;
 }
 
 @media screen and (max-width:1024px) {
-.photo-grid{
-  grid-template-columns:repeat(auto-fit, minmax(284px, 300px));
-  gap:14px;
-}
+  .photo-grid{
+    grid-template-columns:repeat(auto-fit, minmax(284px, 300px));
+    gap:14px;
+  }
 }
 
 @media screen and (max-width:768px) {
@@ -21,7 +22,7 @@
   }
   }
 
-  @media screen and (max-width:320px) {
+  @media screen and (max-width:425px) {
   .photo-grid{
     grid-template-columns:repeat(auto-fit, minmax(240px, 288px));
     gap:12px;
